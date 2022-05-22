@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #D3D3D3;
+}
+.row{
+    backgroud: white;
+    border-radius: 30px;
+    box-shadow: 12px 12px 22px;
+}
+.login img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.login h1{
+    font-family: 'Odibee Sans', cursive;
+}
+.btn1{
+    height: 50px;
+    width: 50%;
+    border:none;
+    outline: none;
+    border-radius: 60px;
+    font-weight: 600;
+    background: rgb(153, 10, 10);
+    color: aliceblue;
+}
+.btn1:hover{
+    background-color: rgb(224, 53, 53);
+    transition: 0.5s;
+}

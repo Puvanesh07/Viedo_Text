@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+
+<div class="total">
+    <form action="/home" method="POST" enctype="multipart/form-data" class="container">
+        <!-- <input type="file" name="file" id="file" accept="video/mp4,video/x-m4v,video/*"> -->
+        <div class="container-fluid">
+            <div class="input-group">
+                <!-- <input type="file" name="file" id="file" accept="video/mp4,video/x-m4v,video/*"> -->
+                <span class="input-group-btn">
+                    <div class="btn btn-default  custom-file-uploader">
+                      <input type="file" name="file" accept="video/mp4,video/x-m4v,video/*"/>
+                    </div>
+                </span>
+            </div>
+            <button class="btn btn-primary" type="submit" name="submit">Upload</button>
+        </div>
+    </form>
+    <div class="container">
+        <div class="container-fluid">
+            {% if transcript %}
+                <h1>Transcript</h1>
+                <p>{{ transcript }}</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
